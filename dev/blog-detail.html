@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+	<title>Cryptor</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<meta property="og:locale" content="ru-Ru">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+	<div class="page">
+
+		<!-- ======== Header ======== -->
+		<header class="section">
+			<div class="wrap">
+				<div class="header header-main header-small">
+
+					<!-- -------- Menu burger -------- -->
+					<div class="menu_burger">
+						<svg class="menu_burger--icon icon">
+							<use xlink:href="img/svg-sprite.svg#burger"></use>
+						</svg>
+					</div>
+
+					<!-- -------- Logo -------- -->
+					<div class="header--logo">
+						<a href="/" class="main_logo">cryptor</a>
+					</div>
+
+					<!-- -------- Main menu -------- -->
+					<div class="header--menu">
+						<div class="header--menu_wrapper">
+							<nav class="main_menu">
+
+								<div class="main_menu--close_button">
+									<svg class="main_menu--close_icon icon">
+										<use xlink:href="img/svg-sprite.svg#cross"></use>
+									</svg>
+								</div>
+
+								<div class="main_menu--item main_submenu">
+									<!-- .main_submenu стили для подменю -->
+									<a href="#" class="main_menu--lnk main_submenu--btn">
+										Разработка
+										<svg class="main_submenu--icon icon">
+											<use xlink:href="img/svg-sprite.svg#caret"></use>
+										</svg>
+									</a>
+									<div class="main_submenu--list">
+										<!-- Подменю раскрывается при наведении только в разрешениях более 1024px -->
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Криптовалюты</a>
+										</div>
+										<div class="main_submenu--subitem"><a href="#"
+												class="main_submenu--lnk">Смарт-контракты</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Аудит
+												контракта</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Криптобиржи</a>
+										</div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">DAPP</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Смарт-контракт
+												Tron</a></div>
+									</div>
+								</div>
+
+								<div class="main_menu--item main_submenu">
+									<a href="#" class="main_menu--lnk main_submenu--btn">
+										ICO/IEO
+										<svg class="main_submenu--icon icon">
+											<use xlink:href="img/svg-sprite.svg#caret"></use>
+										</svg>
+									</a>
+									<div class="main_submenu--list">
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">ICO под ключ</a>
+										</div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">IEO под ключ</a>
+										</div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Сайт для
+												ICO/IEO</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Маркетинг для
+												ICO/IEO</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Личный
+												кабинет</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">White Paper для
+												ICO/IEO</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Road Map для
+												ICO/IEO</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Перевод на
+												языки</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Аудит ICO/IEO</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="main_menu--item main_submenu">
+									<a href="#" class="main_menu--lnk main_submenu--btn">
+										Услуги
+										<svg class="main_submenu--icon icon">
+											<use xlink:href="img/svg-sprite.svg#caret"></use>
+										</svg>
+									</a>
+									<div class="main_submenu--list">
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Банковские
+												счета</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Листинг на
+												биржах</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Крипто
+												консультации</a></div>
+										<div class="main_submenu--subitem"><a href="#"
+												class="main_submenu--lnk">Лицензирование</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Вступление в
+												ПВТ</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Блокчейн
+												юрист</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Кастодиальные
+												решения</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Регистрация
+												компаний</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Экваринг</a>
+										</div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Блокчейн
+												консалтинг</a></div>
+									</div>
+								</div>
+
+								<div class="main_menu--item main_submenu">
+									<a href="#" class="main_menu--lnk main_submenu--btn">
+										О компании
+										<svg class="main_submenu--icon icon">
+											<use xlink:href="img/svg-sprite.svg#caret"></use>
+										</svg>
+									</a>
+									<div class="main_submenu--list">
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Проекты</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Готовые
+												решения</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Блог</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Партнерство</a>
+										</div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Вакансии</a>
+										</div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Контакты</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="main_menu--item">
+									<a href="#" class="main_menu--lnk">Инвесторам</a>
+								</div>
+
+							</nav>
+						</div>
+					</div>
+
+					<!-- -------- Lang -------- -->
+					<div class="header--lang">
+						<div class="lang_select main_submenu">
+							<div class="lang_select--selected main_submenu--btn">
+								Ru
+								<svg class="main_submenu--icon icon">
+									<use xlink:href="img/svg-sprite.svg#caret"></use>
+								</svg>
+							</div>
+							<div class="main_submenu--list">
+								<div class="main_submenu--subitem">
+									<a href="#" class="main_submenu--lnk main_submenu--lnk-padding_equal">Ru</a>
+								</div>
+								<div class="main_submenu--subitem">
+									<a href="#" class="main_submenu--lnk main_submenu--lnk-padding_equal">En</a>
+								</div>
+								<div class="main_submenu--subitem">
+									<a href="#" class="main_submenu--lnk main_submenu--lnk-padding_equal">Tr</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- -------- Landing first screen  -------- -->
+				<div class="first_screen first_screen-main first_screen-blog first_screen-small">
+					<div class="first_screen--inner">
+						<div class="first_screen--content">
+							<h1 class="first_screen--heading">
+								Блог проекта <br> cryptor.guru
+							</h1>
+							<div class="first_screen--text">
+								<p>Развитие конкурентного преимущества требует разработки более интеллектуальных программных
+									решений.
+								</p>
+							</div>
+							<!-- <div class="first_screen--buttons">
+								<button class="btn btn-mobile_fullwidth">Получить консультацию</button>
+							</div> -->
+						</div>
+					</div>
+					<img src="img/blog2.jpg" alt="" class="first_screen__img">
+				</div>
+
+			</div>
+		</header>
+
+		<!-- ======== Main ======== -->
+		<main>
+			<section class="project-page project-blog" id="project-page">
+				<div class="wrap">
+					<div class="project-page__box">
+						<div class="project-page__left">
+							<h2 class="sec_heading--h2">
+								Китай лидирует в глобальном
+								внедрении блокчейна для цифровой трансформации
+							</h2>
+							<div class="blog-head">
+								<img src="img/projects/main.png" alt="" class="blog-pic">
+								<p class="blog-data">
+									23.03.2021
+								</p>
+							</div>
+							<div class="smart__text">
+								<p>
+									Технология блокчейн является катализатором долгосрочного сдвиг доверия в распределенных
+									бизнес-средах по всему миру. Цепочки блоков данных делают активы отслеживаемыми, криптография
+									обеспечивает доверенное владение, а алгоритмы консенсуса реализуют распределенную
+									бизнес-согласованность.
+									В то же время критические проблемы, которые пандемия COVID-19
+									принесла в мировую экономику, такие как финансирование цепочки поставок, прослеживаемость
+									продуктов питания и видимость логистики активов, еще больше определили приоритетность
+									внедрения блокчейна для цифровой трансформации. <br><br> Внедрение блокчейна в Китае
+									наталкивает на
+									вывод, что стратегические инвестиции в цифровую трансформацию со стороны правительства,
+									предприятий и поставщиков продвинули внедрение блокчейна в Китае больше других стран.
+									<br><br>
+									Китай вступает в эпоху блокчейна 3.0. За последнее десятилетие китайский блокчейн-рынок
+									пережил два периода развития. В blockchain 1.0 фирмы-первопроходцы в основном
+									сосредоточились на приложениях цифровой валюты; в blockchain 2.0 дальновидные предприятия
+									и поставщики внедрять пилотные проекты с блокчейном, добавляя дополнительную ценность их
+									бизнесу. Со второй половины 2019 года приоритет корпоративных клиентов, технологический
+									прогресс, достигнутый технологическими лидерами, и прагматичные меры, принятые
+									правительством, привели китайский рынок в эпоху блокчейна 3.0: когда внедрение блокчейна
+									набирает обороты во всех основных вертикалях. <br><br> Поставщики в Китае продвигают свои
+									технологии для удовлетворения потребностей предприятий. Для удовлетворения потребностей
+									предприятий в производительности, масштабируемости, конфиденциальности и безопасности
+									китайские фирмы сделали стратегические инвестиции в блокчейн-исследования и разработки.
+									Ведущие производители, такие как Ant Group, Baidu AI Cloud, EY, Huawei, Neusoft,
+									OneConnect, PeerSafe, Tencent Cloud и WeBank, добились значительного прогресса в
+									блокчейн-технологиях, включая асимметричное шифрование, доказательство нулевого знания,
+									гомоморфное шифрование и консенсусную производительность. <br><br> Блокчейн трансформирует
+									все
+									основные вертикали в Китае. блокчейн трансформирует существующие бизнес-операции и
+									позволяет создавать новые бизнес-модели в рамках цифровой экосистемы во всех основных
+									отраслях, включая банковское дело, страхование, здравоохранение, энергетику,
+									правительство, производство, розничную торговлю, Телекоммуникации и логистику. В
+									частности, финансовые компании уделяют приоритетное внимание трансформации процессов для
+									повышения эффективности и доверия; традиционные вертикали направлены на стимулирование
+									инноваций и улучшение сотрудничества; а правительства сосредоточены на опыте обслуживания
+									и социальном доверии. <br><br> Рынок корпоративной блокчейн-платформы (EBP) в Китае
+									набирает
+									обороты. Поставщики EBP играют ключевую роль в продвижении бизнес-приложений и технологий
+									в Китае. Эти поставщики делятся на три категории: поставщики программного обеспечения,
+									поставщики облачных услуг и поставщики консалтинговых услуг. Поставщики программного
+									обеспечения EBP предоставляют локальное программное обеспечение для поддержки
+									блокчейн-инициатив; поставщики облачных услуг EBP предлагают блокчейн как услугу для
+									запуска инноваций; а поставщики консалтинговых услуг EBP адаптируют блокчейн-решения к
+									потребностям клиентов. <br><br> Обзор подготовлен командой из Cryptor.guru
+								</p>
+							</div>
+							<div class="project-page__links">
+								<a href="#" class="btn btn-bordered">Назад</a>
+								<a href="#" class="btn">Следующая статья</a>
+							</div>
+						</div>
+						<div class="project-page__right">
+							<p class="name">
+								Другие статьи
+							</p>
+							<div class="projects__box">
+								<a href="#" class="projects__item">
+									<img src="img/projects/01.png" alt="">
+									<div>
+										<p>
+											Сайт на wordpress
+										</p>
+									</div>
+								</a>
+								<a href="#" class="projects__item">
+									<img src="img/projects/02.png" alt="">
+									<div>
+										<p>
+											Сайт на wordpress
+										</p>
+									</div>
+								</a>
+								<a href="#" class="projects__item">
+									<img src="img/projects/03.png" alt="">
+									<div>
+										<p>
+											Сайт на wordpress
+										</p>
+									</div>
+								</a>
+								<a href="#" class="projects__item">
+									<img src="img/projects/03.png" alt="">
+									<div>
+										<p>
+											Сайт на wordpress
+										</p>
+									</div>
+								</a>
+								<a href="#" class="projects__item">
+									<img src="img/projects/03.png" alt="">
+									<div>
+										<p>
+											Сайт на wordpress
+										</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="art__slider">
+						<div class="projects__box">
+							<a href="#" class="projects__item">
+								<img src="img/projects/01.png" alt="">
+								<div>
+									<p>
+										Тренды электронной коммерции 2021 года: динамическое ценообразование
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/02.png" alt="">
+								<div>
+									<p>
+										Блокчейн в 4-й промышленной революции
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/03.png" alt="">
+								<div>
+									<p>
+										Тренды электронной коммерции 2021 года: динамическое ценообразование
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/03.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/03.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/02.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+						</div>
+						<div class="projects__box">
+							<a href="#" class="projects__item">
+								<img src="img/projects/01.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/02.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/03.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/03.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/03.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/02.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+						</div>
+						<div class="projects__box">
+							<a href="#" class="projects__item">
+								<img src="img/projects/01.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/02.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/03.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/03.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/03.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/02.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+						</div>
+						<div class="projects__box">
+							<a href="#" class="projects__item">
+								<img src="img/projects/01.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/02.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/03.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/03.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/03.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/02.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+						</div>
+						<div class="projects__box">
+							<a href="#" class="projects__item">
+								<img src="img/projects/01.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/02.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/03.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/03.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/02.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/03.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="order" id="order">
+				<div class="wrap">
+					<div class="order-box">
+						<div class="order-box__left">
+							<div class="order-box__block">
+								<img src="img/o1.png" alt="" class="order-box__pic adapt1">
+								<img src="img/o11.png" alt="" class="order-box__pic adapt2">
+								<div class="order-box__wrap1">
+									<span>
+										Message
+									</span>
+									<p>
+										Succesfull
+									</p>
+									<svg class="order-box__icon icon">
+										<use xlink:href="img/svg-sprite.svg#a1"></use>
+									</svg>
+									<svg class="order-box__icon2 icon">
+										<use xlink:href="img/svg-sprite.svg#check2"></use>
+									</svg>
+								</div>
+								<div class="order-box__wrap2">
+									<img src="img/ava.png" alt="">
+									<svg class="icon">
+										<use xlink:href="img/svg-sprite.svg#a2"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="order-box__block2">
+								<img src="img/o2.png" alt="" class="order-box__pic">
+								<div class="order-box__wrap">
+									<img src="img/ava2.png" alt="">
+									<div class="order-box__content">
+										<p>
+											Poll Meet
+										</p>
+										<span>
+											They answered my questions
+											within 1 hour.
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="order-box__right">
+							<div class="order-box__pos">
+								<p>
+									Оставить заявку
+								</p>
+								<span>
+									Вашу заявку рассмотрят и перезвонят в течение 15 минут.
+								</span>
+							</div>
+							<form action="" class="js-form order-form form" id="popupResult" method="post">
+								<input type="text" name="name" required="" placeholder="Имя" class="form--input"><br>
+								<input type="text" name="email" id="" required="" placeholder="E-mail" class="form--input">
+								<textarea name="text" placeholder="Сообщение" class="form--textarea"></textarea>
+								<button class="btn order-form__btn" data-submit>Отправить</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+
+			<!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+
+		</main>
+
+		<!-- ======== Footer ======== -->
+		<footer class="footer">
+			<div class="wrap">
+				<div class="footer-box">
+					<div class="footer-box__line">
+						<a href="/" class="main_logo">cryptor</a>
+						<ul>
+							<li>
+								<a href="#">
+									Проекты
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Блог
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Контакты
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Вакансии
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Инвесторам
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-box__info">
+						<div class="footer-box__item">
+							<svg class="icon">
+								<use xlink:href="img/svg-sprite.svg#f1"></use>
+							</svg>
+							<a href="tel:+375339036666">
+								+375 33 903-66-66
+							</a>
+						</div>
+						<div class="footer-box__item">
+							<svg class="icon">
+								<use xlink:href="img/svg-sprite.svg#f2"></use>
+							</svg>
+							<a href="mailto:info@cryptor.group">
+								info@cryptor.group
+							</a>
+						</div>
+						<div class="footer-box__item">
+							<svg class="icon icon-last">
+								<use xlink:href="img/svg-sprite.svg#f3"></use>
+							</svg>
+							<p>
+								Беларусь, г. Минск <br>
+								ул. Куприянова, 1А
+							</p>
+						</div>
+					</div>
+					</a>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="wrap">
+					<div class="footer-bottom__flex">
+						<a href="#" class="footer-bottom__link">
+							Политика конфиденциальности
+						</a>
+						<div class="footer-bottom__socials">
+							<a href="#" target="blank">
+								<svg class="order-box__icon icon">
+									<use xlink:href="img/svg-sprite.svg#f4"></use>
+								</svg>
+							</a>
+							<a href="#" target="blank">
+								<svg class="order-box__icon icon">
+									<use xlink:href="img/svg-sprite.svg#f5"></use>
+								</svg>
+							</a>
+							<a href="#" target="blank">
+								<svg class="order-box__icon icon">
+									<use xlink:href="img/svg-sprite.svg#f6"></use>
+								</svg>
+							</a>
+							<a href="#" target="blank">
+								<svg class="order-box__icon icon">
+									<use xlink:href="img/svg-sprite.svg#f7"></use>
+								</svg>
+							</a>
+							<a href="#" target="blank">
+								<svg class="order-box__icon icon">
+									<use xlink:href="img/svg-sprite.svg#f8"></use>
+								</svg>
+							</a>
+							<a href="#" target="blank">
+								<svg class="order-box__icon icon">
+									<use xlink:href="img/svg-sprite.svg#f9"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+
+
+	<script src="js/all.js"></script>
+</body>
+
+</html>

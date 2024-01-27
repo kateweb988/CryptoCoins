@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+	<title>Cryptor</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<meta property="og:locale" content="ru-Ru">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+	<div class="page">
+
+		<!-- ======== Header ======== -->
+		<header class="section">
+			<div class="wrap">
+				<div class="header header-main header-small">
+
+					<!-- -------- Menu burger -------- -->
+					<div class="menu_burger">
+						<svg class="menu_burger--icon icon">
+							<use xlink:href="img/svg-sprite.svg#burger"></use>
+						</svg>
+					</div>
+
+					<!-- -------- Logo -------- -->
+					<div class="header--logo">
+						<a href="/" class="main_logo">cryptor</a>
+					</div>
+
+					<!-- -------- Main menu -------- -->
+					<div class="header--menu">
+						<div class="header--menu_wrapper">
+							<nav class="main_menu">
+
+								<div class="main_menu--close_button">
+									<svg class="main_menu--close_icon icon">
+										<use xlink:href="img/svg-sprite.svg#cross"></use>
+									</svg>
+								</div>
+
+								<div class="main_menu--item main_submenu">
+									<!-- .main_submenu стили для подменю -->
+									<a href="#" class="main_menu--lnk main_submenu--btn">
+										Разработка
+										<svg class="main_submenu--icon icon">
+											<use xlink:href="img/svg-sprite.svg#caret"></use>
+										</svg>
+									</a>
+									<div class="main_submenu--list">
+										<!-- Подменю раскрывается при наведении только в разрешениях более 1024px -->
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Криптовалюты</a>
+										</div>
+										<div class="main_submenu--subitem"><a href="#"
+												class="main_submenu--lnk">Смарт-контракты</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Аудит
+												контракта</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Криптобиржи</a>
+										</div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">DAPP</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Смарт-контракт
+												Tron</a></div>
+									</div>
+								</div>
+
+								<div class="main_menu--item main_submenu">
+									<a href="#" class="main_menu--lnk main_submenu--btn">
+										ICO/IEO
+										<svg class="main_submenu--icon icon">
+											<use xlink:href="img/svg-sprite.svg#caret"></use>
+										</svg>
+									</a>
+									<div class="main_submenu--list">
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">ICO под ключ</a>
+										</div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">IEO под ключ</a>
+										</div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Сайт для
+												ICO/IEO</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Маркетинг для
+												ICO/IEO</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Личный
+												кабинет</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">White Paper для
+												ICO/IEO</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Road Map для
+												ICO/IEO</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Перевод на
+												языки</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Аудит ICO/IEO</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="main_menu--item main_submenu">
+									<a href="#" class="main_menu--lnk main_submenu--btn">
+										Услуги
+										<svg class="main_submenu--icon icon">
+											<use xlink:href="img/svg-sprite.svg#caret"></use>
+										</svg>
+									</a>
+									<div class="main_submenu--list">
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Банковские
+												счета</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Листинг на
+												биржах</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Крипто
+												консультации</a></div>
+										<div class="main_submenu--subitem"><a href="#"
+												class="main_submenu--lnk">Лицензирование</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Вступление в
+												ПВТ</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Блокчейн
+												юрист</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Кастодиальные
+												решения</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Регистрация
+												компаний</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Экваринг</a>
+										</div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Блокчейн
+												консалтинг</a></div>
+									</div>
+								</div>
+
+								<div class="main_menu--item main_submenu">
+									<a href="#" class="main_menu--lnk main_submenu--btn">
+										О компании
+										<svg class="main_submenu--icon icon">
+											<use xlink:href="img/svg-sprite.svg#caret"></use>
+										</svg>
+									</a>
+									<div class="main_submenu--list">
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Проекты</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Готовые
+												решения</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Блог</a></div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Партнерство</a>
+										</div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Вакансии</a>
+										</div>
+										<div class="main_submenu--subitem"><a href="#" class="main_submenu--lnk">Контакты</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="main_menu--item">
+									<a href="#" class="main_menu--lnk">Инвесторам</a>
+								</div>
+
+							</nav>
+						</div>
+					</div>
+
+					<!-- -------- Lang -------- -->
+					<div class="header--lang">
+						<div class="lang_select main_submenu">
+							<div class="lang_select--selected main_submenu--btn">
+								Ru
+								<svg class="main_submenu--icon icon">
+									<use xlink:href="img/svg-sprite.svg#caret"></use>
+								</svg>
+							</div>
+							<div class="main_submenu--list">
+								<div class="main_submenu--subitem">
+									<a href="#" class="main_submenu--lnk main_submenu--lnk-padding_equal">Ru</a>
+								</div>
+								<div class="main_submenu--subitem">
+									<a href="#" class="main_submenu--lnk main_submenu--lnk-padding_equal">En</a>
+								</div>
+								<div class="main_submenu--subitem">
+									<a href="#" class="main_submenu--lnk main_submenu--lnk-padding_equal">Tr</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- -------- Landing first screen  -------- -->
+				<div class="first_screen first_screen-main first_screen-small">
+					<div class="first_screen--inner">
+						<div class="first_screen--content">
+							<h1 class="first_screen--heading">
+								Наши проекты
+							</h1>
+							<div class="first_screen--text">
+								<p>Развитие конкурентного преимущества требует разработки более интеллектуальных программных
+									решений.</p>
+							</div>
+							<div class="first_screen--buttons">
+								<button class="btn btn-mobile_fullwidth">Получить консультацию</button>
+							</div>
+						</div>
+					</div>
+					<img src="img/proj2.jpg" alt="" class="first_screen__img">
+				</div>
+
+			</div>
+		</header>
+
+		<!-- ======== Main ======== -->
+		<main>
+			<section class="project-page" id="project-page">
+				<div class="wrap">
+					<div class="project-page__box">
+						<div class="project-page__left">
+							<h2 class="sec_heading--h2">
+								Личный кабинет <br>
+								платежной системы
+							</h2>
+							<div class="contacts__info">
+								<div class="contacts__flex">
+									<div class="contacts__item">
+										<p>
+											Сайт:
+										</p>
+										<a href="paysys.blackshot.dev">
+											paysys.blackshot.dev
+										</a>
+									</div>
+									<div class="contacts__item">
+										<p>
+											Время разработки:
+										</p>
+										<span>
+											1 месяц.
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="smart__text">
+								<p>
+									Удобный и простой в использовании для пользователя личный кабинет платежной системы Paysys.
+									Включает в себя функционал по управлению: личными данными, счетами в 3-х валютах (доллар США,
+									евро, британский фунт), возможностью приема средств на собственные счета на
+									<span class="mob-see1"> прямую от любых
+										банков через SEPA и SWIFT, возможностью вывода средств на карты VISA, Mastercard,
+										возможность
+										обмена одних валют на другие, просмотр транзакций, состояния, чат круглосуточной
+										поддержки,
+										мультиязычную версию (английский и русский) с возможностью расширения до 16 языков.</span>
+								</p>
+								<a href="#" class="mob-link mob-link1">
+									Читать больше <svg class="icon">
+										<use xlink:href="img/svg-sprite.svg#arr"></use>
+									</svg>
+								</a>
+							</div>
+							<div class="why-box">
+								<div class="why-box__item">
+									<p>
+										Выполненные работы:
+									</p>
+									<ul>
+										<li>
+											Прототипирование клиентской и админской части
+										</li>
+										<li>
+											Дизайн клиентской части
+										</li>
+										<li>
+											Функционал регистрации и авторизации Google reCaptcha
+										</li>
+										<div class="mob-see3 mob-see">
+											<li>
+												Подтверждение регистрации и платежных поручений по SMS
+											</li>
+											<li>
+												Функционал создания платежных поручений
+											</li>
+											<li>
+												Функционал обмена валюты
+											</li>
+											<li>
+												Функционал управления расчетными счетами
+											</li>
+											<li>
+												Функционал настройки личной информации
+											</li>
+											<li>
+												Функционал проверки документов KYC
+											</li>
+											<li>
+												Функционал технической поддержки
+											</li>
+											<li>
+												Функционал отчетов
+											</li>
+											<li>
+												Функционал многоязычности с возможностью переводов внутри ПУ админа
+											</li>
+											<li>
+												API IBAN
+											</li>
+											<li>
+												API Swift
+											</li>
+											<li>
+												API Twillo
+											</li>
+											<li>
+												API банковских курсов
+											</li>
+											<li>
+												Панель администратора
+											</li>
+											<li>
+												Отчеты для администратора с фильтрами по платежам
+											</li>
+											<li>
+												Список мерчантов для администратора
+											</li>
+											<li>
+												Запросы в саппорт для администратора
+											</li>
+											<li>
+												Настройки по комиссиям за платежные поручения и обмен валюты
+											</li>
+										</div>
+									</ul>
+									<a href="#" class="mob-link3 mob-link">
+										Читать больше <svg class="icon">
+											<use xlink:href="img/svg-sprite.svg#arr"></use>
+										</svg>
+									</a>
+								</div>
+								<div class="why-box__item">
+									<ul>
+										<p>
+											Технологиии:
+										</p>
+										<li>
+											HTML
+										</li>
+										<li>
+											JavaScriptПолная занятость, график будни с 09:00 до 18:00.
+										</li>
+										<li>
+											PHP
+										</li>
+										<div class="mob-see4 mob-see">
+											<li>
+												Laravel
+											</li>
+											<li>
+												MySQL
+											</li>
+										</div>
+									</ul>
+									<a href="#" class="mob-link4 mob-link">
+										Читать больше <svg class="icon">
+											<use xlink:href="img/svg-sprite.svg#arr"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="project-page__screens">
+								<p>
+									Скриншоты
+								</p>
+								<img src="img/project-screens/01.png" alt="">
+								<img src="img/project-screens/02.png" alt="">
+								<img src="img/project-screens/03.png" alt="">
+								<img src="img/project-screens/04.png" alt="">
+							</div>
+							<div class="project-page__links">
+								<a href="#" class="btn btn-bordered">Назад</a>
+								<a href="#" class="btn">Следующий проект</a>
+							</div>
+						</div>
+						<div class="project-page__right">
+							<p class="name">
+								Другие проекты
+							</p>
+							<div class="projects__box">
+								<a href="#" class="projects__item">
+									<img src="img/projects/01.png" alt="">
+									<div>
+										<p>
+											Сайт на wordpress
+										</p>
+									</div>
+								</a>
+								<a href="#" class="projects__item">
+									<img src="img/projects/02.png" alt="">
+									<div>
+										<p>
+											Сайт на wordpress
+										</p>
+									</div>
+								</a>
+								<a href="#" class="projects__item">
+									<img src="img/projects/03.png" alt="">
+									<div>
+										<p>
+											Сайт на wordpress
+										</p>
+									</div>
+								</a>
+								<a href="#" class="projects__item">
+									<img src="img/projects/03.png" alt="">
+									<div>
+										<p>
+											Сайт на wordpress
+										</p>
+									</div>
+								</a>
+								<a href="#" class="projects__item">
+									<img src="img/projects/03.png" alt="">
+									<div>
+										<p>
+											Сайт на wordpress
+										</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="art__slider">
+						<div class="projects__box">
+							<a href="#" class="projects__item">
+								<img src="img/projects/01.png" alt="">
+								<div>
+									<p>
+										Тренды электронной коммерции 2021 года: динамическое ценообразование
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/02.png" alt="">
+								<div>
+									<p>
+										Блокчейн в 4-й промышленной революции
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/03.png" alt="">
+								<div>
+									<p>
+										Тренды электронной коммерции 2021 года: динамическое ценообразование
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/03.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/03.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/02.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+						</div>
+						<div class="projects__box">
+							<a href="#" class="projects__item">
+								<img src="img/projects/01.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/02.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/03.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/03.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/03.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/02.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+						</div>
+						<div class="projects__box">
+							<a href="#" class="projects__item">
+								<img src="img/projects/01.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/02.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/03.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/03.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/03.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/02.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+						</div>
+						<div class="projects__box">
+							<a href="#" class="projects__item">
+								<img src="img/projects/01.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/02.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/03.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/03.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/03.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/02.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+						</div>
+						<div class="projects__box">
+							<a href="#" class="projects__item">
+								<img src="img/projects/01.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/02.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/03.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/03.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/02.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+							<a href="#" class="projects__item">
+								<img src="img/projects/03.png" alt="">
+								<div>
+									<p>
+										Сайт на wordpress
+									</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="order" id="order">
+				<div class="wrap">
+					<div class="order-box">
+						<div class="order-box__left">
+							<div class="order-box__block">
+								<img src="img/o1.png" alt="" class="order-box__pic adapt1">
+								<img src="img/o11.png" alt="" class="order-box__pic adapt2">
+								<div class="order-box__wrap1">
+									<span>
+										Message
+									</span>
+									<p>
+										Succesfull
+									</p>
+									<svg class="order-box__icon icon">
+										<use xlink:href="img/svg-sprite.svg#a1"></use>
+									</svg>
+									<svg class="order-box__icon2 icon">
+										<use xlink:href="img/svg-sprite.svg#check2"></use>
+									</svg>
+								</div>
+								<div class="order-box__wrap2">
+									<img src="img/ava.png" alt="">
+									<svg class="icon">
+										<use xlink:href="img/svg-sprite.svg#a2"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="order-box__block2">
+								<img src="img/o2.png" alt="" class="order-box__pic">
+								<div class="order-box__wrap">
+									<img src="img/ava2.png" alt="">
+									<div class="order-box__content">
+										<p>
+											Poll Meet
+										</p>
+										<span>
+											They answered my questions
+											within 1 hour.
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="order-box__right">
+							<div class="order-box__pos">
+								<p>
+									Оставить заявку
+								</p>
+								<span>
+									Вашу заявку рассмотрят и перезвонят в течение 15 минут.
+								</span>
+							</div>
+							<form action="" class="js-form order-form form" id="popupResult" method="post">
+								<input type="text" name="name" required="" placeholder="Имя" class="form--input"><br>
+								<input type="text" name="email" id="" required="" placeholder="E-mail" class="form--input">
+								<textarea name="text" placeholder="Сообщение" class="form--textarea"></textarea>
+								<button class="btn order-form__btn" data-submit>Отправить</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+
+			<!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+
+		</main>
+
+		<!-- ======== Footer ======== -->
+		<footer class="footer">
+			<div class="wrap">
+				<div class="footer-box">
+					<div class="footer-box__line">
+						<a href="/" class="main_logo">cryptor</a>
+						<ul>
+							<li>
+								<a href="#">
+									Проекты
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Блог
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Контакты
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Вакансии
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Инвесторам
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-box__info">
+						<div class="footer-box__item">
+							<svg class="icon">
+								<use xlink:href="img/svg-sprite.svg#f1"></use>
+							</svg>
+							<a href="tel:+375339036666">
+								+375 33 903-66-66
+							</a>
+						</div>
+						<div class="footer-box__item">
+							<svg class="icon">
+								<use xlink:href="img/svg-sprite.svg#f2"></use>
+							</svg>
+							<a href="mailto:info@cryptor.group">
+								info@cryptor.group
+							</a>
+						</div>
+						<div class="footer-box__item">
+							<svg class="icon icon-last">
+								<use xlink:href="img/svg-sprite.svg#f3"></use>
+							</svg>
+							<p>
+								Беларусь, г. Минск <br>
+								ул. Куприянова, 1А
+							</p>
+						</div>
+					</div>
+					</a>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="wrap">
+					<div class="footer-bottom__flex">
+						<a href="#" class="footer-bottom__link">
+							Политика конфиденциальности
+						</a>
+						<div class="footer-bottom__socials">
+							<a href="#" target="blank">
+								<svg class="order-box__icon icon">
+									<use xlink:href="img/svg-sprite.svg#f4"></use>
+								</svg>
+							</a>
+							<a href="#" target="blank">
+								<svg class="order-box__icon icon">
+									<use xlink:href="img/svg-sprite.svg#f5"></use>
+								</svg>
+							</a>
+							<a href="#" target="blank">
+								<svg class="order-box__icon icon">
+									<use xlink:href="img/svg-sprite.svg#f6"></use>
+								</svg>
+							</a>
+							<a href="#" target="blank">
+								<svg class="order-box__icon icon">
+									<use xlink:href="img/svg-sprite.svg#f7"></use>
+								</svg>
+							</a>
+							<a href="#" target="blank">
+								<svg class="order-box__icon icon">
+									<use xlink:href="img/svg-sprite.svg#f8"></use>
+								</svg>
+							</a>
+							<a href="#" target="blank">
+								<svg class="order-box__icon icon">
+									<use xlink:href="img/svg-sprite.svg#f9"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+
+
+	<script src="js/all.js"></script>
+</body>
+
+</html>

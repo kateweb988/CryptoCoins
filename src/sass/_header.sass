@@ -1,0 +1,256 @@
+.header
+	display: flex
+	justify-content: space-between
+	align-items: center
+	height: 130px
+	@media ( max-width: 1000px )
+		&--menu
+			position: fixed
+			left: -120vw
+			top: 0
+			width: 100vw
+			height: 100vh
+			display: flex
+			z-index: 1000
+			background: rgba(#000, .35)
+			backdrop-filter: blur(11px)
+			overflow: hidden
+			opacity: 0
+			transition: opacity $duration
+			&.opening
+				left: 0
+			&.open
+				opacity: 1
+			 .header--menu_wrapper
+				 transform: translateX(0)
+		&--menu_wrapper
+			width: 300px
+			height: 100%
+			background: #fff
+			transform: translateX(-320px)
+			transition: transform $duration
+			overflow: hidden
+	@media ( max-width: 470px )
+		height: 90px
+
+.main_logo
+	font-size: 2.26rem
+	color: $blueDark
+	font-weight: bold
+
+.main_menu
+	position: relative
+	display: flex
+	height: 100px
+	&--item
+		display: flex
+		align-items: center
+		padding: 0 20px
+	&--lnk
+		color: $blueDark
+		transition: color .2s
+		&:hover
+			color: $blueLight
+	&--close_button
+		display: none
+	@media ( max-width: 1000px )
+		margin-right: -20px
+		padding-right: 20px
+		padding-top: 40px
+		padding-bottom: 15px
+		height: 100%
+		flex-direction: column
+		overflow-y: scroll
+		&--item
+			padding: 10px 20px
+		&--close_button
+			display: block
+		&--close_icon
+			position: absolute
+			right: 30px
+			top: 10px
+			width: 12px
+			height: 12px
+			fill: $blueDark
+			&:hover
+				fill: $blueLight
+
+.main_submenu
+	position: relative
+	padding-right: 40px
+	cursor: pointer
+	&--btn
+		color: $blueDark
+	&--icon
+		position: absolute
+		top: calc(50% - 6px)
+		right: 20px
+		width: 12px
+		height: 12px
+		stroke: $blueDark
+		transform: rotate(0)
+		transform-origin: 50% 50% 0
+		transition: transform, stroke
+		transition-duration: $duration
+	&--list
+		display: flex
+		flex-direction: column
+		position: absolute
+		left: 50%
+		top: 90px
+		padding: 20px 10px
+		width: auto
+		max-width: none
+		background: #fff
+		border-radius: 3px
+		box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.1)
+		transition: transform .2s, opacity .2s
+		z-index: 100
+		@media( min-width: 1001px ) 											// раскрытие подпунктов меню в PC версии (до 1001px)
+			transform: translateX(-50%) translateY(150px)
+			opacity: 0
+			visibility: hidden
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			left: 50%
+			top: -8px
+			width: 17px
+			height: 17px
+			transform: translateX(-50%) rotate(45deg)
+			background: #fff
+	&--subitem
+		transition: transform .1s
+		@media( min-width: 1001px )
+			transform: rotateX(90deg)
+	&--lnk
+		display: block
+		padding: 15px 10px 15px 20px
+		white-space: nowrap
+		color: $blueDark
+		transition: color .2s
+		&-padding_equal
+			padding: 10px 15px
+		&:hover
+			color: $blueLight
+	&:hover
+		.main_submenu--btn
+			color: $blueLight
+		@media( min-width: 1001px ) 											// раскрытие подпунктов меню в PC версии (до 1001px)
+			.main_submenu--icon
+				transform: rotate(-180deg)
+				stroke: $blueLight
+			.main_submenu--list
+				transform: translateX(-50%) translateY(0)
+				opacity: 1
+				visibility: visible
+			.main_submenu--subitem
+				transform: rotateX(0)
+				opacity: 1
+				transition-delay: .8s
+				&:nth-child(1)
+					transition-delay: .05s
+				&:nth-child(2)
+					transition-delay: .1s
+				&:nth-child(3)
+					transition-delay: .15s
+				&:nth-child(4)
+					transition-delay: .2s
+				&:nth-child(5)
+					transition-delay: .25s
+				&:nth-child(6)
+					transition-delay: .3s
+				&:nth-child(7)
+					transition-delay: .35s
+				&:nth-child(8)
+					transition-delay: .4s
+				&:nth-child(9)
+					transition-delay: .45s
+				&:nth-child(10)
+					transition-delay: .5s
+				&:nth-child(11)
+					transition-delay: .55s
+				&:nth-child(12)
+					transition-delay: .6s
+				&:nth-child(13)
+					transition-delay: .65s
+				&:nth-child(14)
+					transition-delay: .7s
+				&:nth-child(15)
+					transition-delay: .75s
+	@media ( max-width: 1000px )
+		&.main_menu--item
+			flex-wrap: wrap
+			.main_submenu--list
+				display: none
+				position: relative
+				left: auto
+				top: auto
+				padding: 10px 0 0
+				width: 100%
+				background: none
+				border-radius: 0
+				box-shadow: none
+				z-index: auto
+				&:before
+					display: none
+			.main_submenu--lnk
+				padding: 10px
+			.main_submenu--icon
+				top: 10px
+			.main_submenu.active
+				color: $blueLight
+				.main_submenu--icon
+					transform: rotate(-180deg)
+					stroke: $blueLight
+
+.lang_select
+	position: relative
+	display: flex
+	height: 100px
+	text-transform: uppercase
+	&--selected
+		display: flex
+		align-items: center
+		cursor: pointer
+	&.main_submenu
+		@media( max-width: 1000px )
+			.main_submenu--list
+				transform: translateX(-50%) translateY(50px)
+				opacity: 0
+				visibility: hidden
+			.main_submenu--subitem
+				transform: rotateX(90deg)
+			&:hover											// раскрытие подпунктов меню в PC версии (до 1001px)
+				.main_submenu--icon
+					transform: rotate(-180deg)
+					stroke: $blueLight
+				.main_submenu--list
+					transform: translateX(-50%) translateY(0)
+					opacity: 1
+					visibility: visible
+				.main_submenu--subitem
+					transform: rotateX(0)
+					opacity: 1
+					transition-delay: .3s
+					&:nth-child(1)
+						transition-delay: .05s
+					&:nth-child(2)
+						transition-delay: .1s
+					&:nth-child(3)
+						transition-delay: .15s
+					&:nth-child(4)
+						transition-delay: .2s
+					&:nth-child(5)
+						transition-delay: .25s
+
+.menu_burger
+	display: none
+	padding: 15px 15px 15px 0
+	width: 42px
+	height: 100%
+	&--icon
+		fill: $blueLight
+	@media ( max-width: 1000px )
+		display: block

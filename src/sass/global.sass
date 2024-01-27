@@ -1,0 +1,182 @@
+*
+	box-sizing: border-box
+	&:focus,
+	&:active
+		outline: 0 none
+
+html
+	font-size: 16px
+	@media ( max-width: 1570px )
+		font-size: 14px
+	@media ( max-width: 1200px )
+		font-size: 12px
+
+body
+	color: $blueDark
+	font-size: 1.125rem //18px
+	font-family: 'Gotham Pro', sans-serif
+	font-weight: normal
+	font-style: normal
+	background: #fff
+	box-sizing: border-box
+
+h1, h2, h3, h4, h5, h6
+	font-weight: bold
+
+a
+	text-decoration: none
+
+.page
+	display: flex
+	flex-direction: column
+	// width: 100%
+	// min-height: 100vh
+	width: 100%
+	// height: 100vh
+	overflow: hidden
+	// overflow-x: hidden
+	// overflow-y: scroll
+	box-sizing: border-box
+
+.section
+	display: flex
+	justify-content: center
+	flex-direction: column
+	align-items: center
+	width: 100%
+
+.wrap
+	padding: 0 15px
+	width: 1230px
+	max-width: 100%
+	&-full_height
+		display: flex
+		flex-direction: column
+		min-height: 100vh
+	@media ( max-width: 1570px )
+		width: 1200px
+	@media ( max-width: 1200px )
+		width: 1000px
+	@media ( max-width: 1000px )
+		width: 100%
+
+.footer
+	margin-top: auto
+	display: flex
+	justify-content: center
+	width: 100%
+
+.sec_heading
+	padding: 80px 0 70px
+	&-center
+		margin: 0 auto
+		text-align: center
+	&--h2
+		padding-bottom: 4px
+		font-size: 42px
+		line-height: 1.2
+		color: $blueDark
+		@media ( max-width: 600px )
+			font-size: 38px
+		@media (max-width: 360px)
+			font-size: 30px
+
+.btn
+	display: inline-flex
+	justify-content: center
+	align-items: center
+	padding: 10px 14px
+	height: 56px
+	border: 2px solid $blueLight
+	border-radius: 7px
+	background: $blueLight
+	font-family: 'Gotham Pro'
+	font-size: 16px
+	font-weight: bold
+	color: #fff
+	cursor: pointer
+	transition-duration: .2s
+	transition-property: color, background, border-color
+	&:hover
+		color: #fff
+		background: $blueDark
+		border-color: $blueDark
+	&-bordered
+		background: #fff
+		color: $blueLight
+		&:hover
+			background: $blueLight
+			border-color: $blueLight
+	@media ( max-width: 425px )
+		&-mobile_fullwidth
+			width: 100%
+
+.form
+	display: flex
+	flex-wrap: wrap
+	width: 100%
+	&--item
+		display: flex
+		width: 100%
+		padding: 15px 0
+	&--input,
+	&--textarea
+		width: 100%
+		display: flex
+		align-items: center
+		padding: 0 25px
+		background: none
+		border: 2px solid $gray
+		border-radius: 7px
+		transition: border-color .2s
+		&::placeholder
+			color: $grayLight
+		&:focus
+			border-color: $blueLight
+	&--input
+		height: 66px
+	&--textarea
+		padding: 15px 25px
+		min-height: 132px
+		max-height: 260px
+		max-width: 100%
+
+.alert
+	width: 100%
+	padding: 15px 0
+	cursor: default
+	&--inner
+		display: inline-flex
+		justify-content: center
+		align-items: center
+		min-width: 205px
+		padding: 20px 45px
+		color: #fff
+		background: $gray
+		border-radius: 7px
+		&-success
+			background-color: $green
+		&-error
+			background-color: $red
+
+.text_blue
+	color: $blueLight
+
+.w100
+	width: 100%
+
+.block
+	display: block
+
+.flex
+	display: flex
+
+.icon
+	max-width: 100%
+	max-height: 100%
+	&-greencheck
+		margin-left: 10px
+		width: 24px
+		height: 24px
+
+

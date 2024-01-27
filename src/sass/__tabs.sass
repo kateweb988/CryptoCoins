@@ -1,0 +1,699 @@
+.tabs
+	display: flex
+	flex-direction: column
+	&--bar
+		padding: 3px
+		display: flex
+		background: $fillMedium
+		border-radius: $radius/2
+	&--bar_item
+		flex-grow: 1
+		padding: 4px
+	&--btn
+		width: 100%
+		height: 54px
+		display: flex
+		justify-content: center
+		align-items: center
+		padding: 10px
+		border-radius: $radius/2
+		text-align: center
+		line-height: 1.2
+		font-size: 16px
+		cursor: pointer
+		transition: background, color
+		transition-duration: $duration
+		&:hover
+			color: $blueLight
+		&:hover,
+		&.active
+			background: #fff
+	@media ( max-width: 1000px )
+		display: none
+
+.tabslider
+	padding: 110px 0 100px
+	line-height: 1.42
+	&--header
+		position: relative
+		display: none
+	&--caret
+		position: absolute
+		top: 50%
+		right: 0
+		width: 18px
+		height: 18px
+		stroke: $blueDark
+		transform: translateY(-50%)
+		transition: transform, stroke
+		transition-duration: $duration
+	&--item
+		padding: 0
+		margin: 0
+		display: none
+		width: 100%
+		&.active
+			display: block
+	&--inner
+		display: flex
+	&--information,
+	&--media
+		position: relative
+		width: 50%
+	&--information
+		padding-right: 118px
+		opacity: 1
+		transform: none
+		transition: transform, opacity
+		transition-duration: $duration
+	&--heading
+		padding-bottom: 15px
+		font-size: 32px
+		font-weight: bold
+		line-height: 1.2
+	&--content
+		padding-bottom: 30px
+	&--text
+		font-size: 1rem
+		color: $textGray
+	&--image
+		display: block
+		width: 90%
+		border-radius: $radius
+		opacity: 1
+		transform: none
+		transition: transform, opacity
+		transition-duration: $duration
+	&--media_item
+		position: absolute
+		padding: 15px
+		border-radius: $radius
+		background: #fff
+		opacity: 1
+		transform: none
+		transition: transform, opacity
+		transition-duration: $duration
+		@extend .box_shadow
+		&-one
+			right: -10px
+			top: -40px
+		&-two
+			left: -110px
+			bottom: -50px
+		&-tree
+			right: -10px
+			bottom: -50px
+	&--small
+		font-size: .8rem
+		color: $textGray
+	&--block_heading
+		padding-bottom: 15px
+		display: flex
+		align-items: center
+		justify-content: space-between
+		width: 100%
+		font-size: 21px
+		font-weight: bold
+		&-nopadding
+			padding-bottom: 0
+	&--buttons
+		padding-top: 35px
+	&--icon
+		&_1
+			width: 146px
+			height: 41px
+		&_2
+			width: 193px
+			height: 61px
+		&_3
+			width: 154px
+			height: 41px
+		&_4
+			width: 288px
+			height: 60px
+		&_5
+			width: 180px
+			height: 61px
+		&_6
+			width: 184px
+			height: 82px
+		&_7
+			width: 171px
+			height: 43px
+		&_8
+			width: 260px
+			height: 55px
+		&_9
+			width: 201px
+			height: 41px
+		&_10
+			width: 280px
+			height: 107px
+	&--num
+		font-size: .9rem
+		color: $textGray
+	&--reverce
+		padding: 0 15px
+		display: flex
+		align-items: center
+	&--reverce_icon
+		width: 50px
+		height: 50px
+	&--price_heading
+		font-size: 1.125rem
+		font-weight: bold
+	&--item.hide
+		.tabslider
+			&--information
+				transform: translateX(-200px)
+				opacity: 0
+			&--image
+				transform: translateX(200px)
+				opacity: 0
+			&--media_item
+				&-one
+					transform: translateX(300px)
+					opacity: 0
+				&-two
+					transform: translateX(-300px)
+					opacity: 0
+				&-tree
+					transform: translateX(400px)
+					opacity: 0
+	@media ( max-width: 1570px )
+		&--information
+			padding-right: 50px
+		&--media_item
+			&-one
+				right: -5px
+				top: -20px
+			&-two
+				left: -40px
+				bottom: -20px
+			&-tree
+				right: -5px
+				bottom: -20px
+		&--block_heading
+			padding-bottom: 10px
+		&--icon
+			&_1
+				width: 183px
+				height: 53px
+			&_2
+				width: 273px
+				height: 86px
+			&_3
+				width: 103px
+				height: 27px
+			&_4
+				width: 224px
+				height: 47px
+			&_5
+				width: 135px
+				height: 47px
+			&_6
+				width: 183px
+				height: 86px
+			&_7
+				width: 187px
+				height: 49px
+			&_8
+				width: 231px
+				height: 53px
+			&_9
+				width: 134px
+				height: 27px
+			&_10
+				width: 279px
+				height: 103px
+	@media ( max-width: 1000px )
+		padding: 0
+		border-bottom: 1px solid $gray
+		&--content
+			display: none
+		&--item,
+		&--header
+			display: block
+		&--header
+			padding: 15px 25px 15px 0
+			font-size: 2rem
+			font-weight: bold
+			text-align: left
+			border-top: 1px solid $gray
+			@media (max-width: 576px)
+				font-size: 28px
+			@media (max-width: 360px)
+				font-size: 24px
+		&--heading
+			display: none
+		&--inner
+			padding: 0 0 20px
+			flex-wrap: wrap
+		&--item
+			&.active
+				.tabslider--caret
+					stroke: $blueLight
+					transform: translateY(-50%) rotate(-180deg)
+				// .tabslider--content
+				// 	display: block
+		&--information,
+		&--media
+			width: 100%
+		&--information
+			padding-right: 0
+			padding-bottom: 40px
+		&--image
+			margin: 0 auto
+			width: 100%
+		&--media_item
+			&-one
+				right: -15px
+				top: -30px
+			&-two
+				left: -15px
+				bottom: -30px
+			&-tree
+				right: -15px
+				bottom: -30px
+	@media ( max-width: 600px )
+		&--icon
+			&_1
+				width: 137px
+				height: 39px
+			&_2
+				width: 205px
+				height: 65px
+			&_3
+				width: 77px
+				height: 21px
+			&_4
+				width: 168px
+				height: 35px
+			&_5
+				width: 101px
+				height: 35px
+			&_6
+				width: 137px
+				height: 63px
+			&_7
+				width: 140px
+				height: 37px
+			&_8
+				width: 173px
+				height: 40px
+			&_9
+				width: 100px
+				height: 20px
+			&_10
+				width: 210px
+				height: 78px
+	@media ( max-width: 470px )
+		&--header
+			line-height: 1.2
+		&--media_item
+			padding: 10px
+		&--block_heading
+			padding-bottom: 5px
+			font-size: 1.2rem
+		&--icon
+			&_1
+				width: 102px
+				height: 29px
+			&_2
+				width: 152px
+				height: 48px
+			&_3
+				width: 57px
+				height: 15px
+			&_4
+				width: 124px
+				height: 26px
+			&_5
+				width: 75px
+				height: 26px
+			&_6
+				width: 102px
+				height: 48px
+			&_7
+				width: 104px
+				height: 27px
+			&_8
+				width: 128px
+				height: 29px
+			&_9
+				width: 74px
+				height: 15px
+			&_10
+				width: 155px
+				height: 57px
+.arc-new
+	.tabs
+		display: flex
+		flex-direction: column
+		&--bar
+			padding: 3px
+			display: flex
+			background: $fillMedium
+			border-radius: $radius/2
+		&--bar_item
+			flex-grow: 1
+			padding: 4px
+		&--btn
+			width: 100%
+			height: 54px
+			display: flex
+			justify-content: center
+			align-items: center
+			padding: 10px
+			border-radius: $radius/2
+			text-align: center
+			line-height: 1.2
+			font-size: 16px
+			cursor: pointer
+			transition: background, color
+			transition-duration: $duration
+			&:hover
+				color: $blueLight
+			&:hover,
+			&.active
+				background: #fff
+		@media ( max-width: 5000px )
+			display: none
+	.tabslider
+		padding: 110px 0 100px
+		line-height: 1.42
+		&--header
+			position: relative
+			display: none
+		&--caret
+			position: absolute
+			top: 50%
+			right: 0
+			width: 18px
+			height: 18px
+			stroke: $blueDark
+			transform: translateY(-50%)
+			transition: transform, stroke
+			transition-duration: $duration
+		&--item
+			padding: 0
+			margin: 0
+			display: none
+			width: 100%
+			&.active
+				display: block
+		&--inner
+			display: flex
+		&--information,
+		&--media
+			position: relative
+			width: 50%
+		&--information
+			padding-right: 118px
+			opacity: 1
+			transform: none
+			transition: transform, opacity
+			transition-duration: $duration
+		&--heading
+			padding-bottom: 15px
+			font-size: 32px
+			font-weight: bold
+			line-height: 1.2
+		&--content
+			padding-bottom: 30px
+		&--text
+			font-size: 1rem
+			color: $textGray
+		&--image
+			display: block
+			width: 90%
+			border-radius: $radius
+			opacity: 1
+			transform: none
+			transition: transform, opacity
+			transition-duration: $duration
+		&--media_item
+			position: absolute
+			padding: 15px
+			border-radius: $radius
+			background: #fff
+			opacity: 1
+			transform: none
+			transition: transform, opacity
+			transition-duration: $duration
+			@extend .box_shadow
+			&-one
+				right: -10px
+				top: -40px
+			&-two
+				left: -110px
+				bottom: -50px
+			&-tree
+				right: -10px
+				bottom: -50px
+		&--small
+			font-size: .8rem
+			color: $textGray
+		&--block_heading
+			padding-bottom: 15px
+			display: flex
+			align-items: center
+			justify-content: space-between
+			width: 100%
+			font-size: 21px
+			font-weight: bold
+			&-nopadding
+				padding-bottom: 0
+		&--buttons
+			padding-top: 35px
+		&--icon
+			&_1
+				width: 146px
+				height: 41px
+			&_2
+				width: 193px
+				height: 61px
+			&_3
+				width: 154px
+				height: 41px
+			&_4
+				width: 288px
+				height: 60px
+			&_5
+				width: 180px
+				height: 61px
+			&_6
+				width: 184px
+				height: 82px
+			&_7
+				width: 171px
+				height: 43px
+			&_8
+				width: 260px
+				height: 55px
+			&_9
+				width: 201px
+				height: 41px
+			&_10
+				width: 280px
+				height: 107px
+		&--num
+			font-size: .9rem
+			color: $textGray
+		&--reverce
+			padding: 0 15px
+			display: flex
+			align-items: center
+		&--reverce_icon
+			width: 50px
+			height: 50px
+		&--price_heading
+			font-size: 1.125rem
+			font-weight: bold
+		&--item.hide
+			.tabslider
+				&--information
+					transform: translateX(-200px)
+					opacity: 0
+				&--image
+					transform: translateX(200px)
+					opacity: 0
+				&--media_item
+					&-one
+						transform: translateX(300px)
+						opacity: 0
+					&-two
+						transform: translateX(-300px)
+						opacity: 0
+					&-tree
+						transform: translateX(400px)
+						opacity: 0
+		@media ( max-width: 1570px )
+			&--information
+				padding-right: 50px
+			&--media_item
+				&-one
+					right: -5px
+					top: -20px
+				&-two
+					left: -40px
+					bottom: -20px
+				&-tree
+					right: -5px
+					bottom: -20px
+			&--block_heading
+				padding-bottom: 10px
+			&--icon
+				&_1
+					width: 183px
+					height: 53px
+				&_2
+					width: 273px
+					height: 86px
+				&_3
+					width: 103px
+					height: 27px
+				&_4
+					width: 224px
+					height: 47px
+				&_5
+					width: 135px
+					height: 47px
+				&_6
+					width: 183px
+					height: 86px
+				&_7
+					width: 187px
+					height: 49px
+				&_8
+					width: 231px
+					height: 53px
+				&_9
+					width: 134px
+					height: 27px
+				&_10
+					width: 279px
+					height: 103px
+		@media ( max-width: 5000px )
+			padding: 0
+			border-bottom: 1px solid $gray
+			&--content
+				display: none
+			&--item,
+			&--header
+				display: block
+			&--header
+				padding: 15px 25px 15px 0
+				font-size: 2rem
+				font-weight: bold
+				text-align: left
+				border-top: 1px solid $gray
+			&--heading
+				display: none
+			&--inner
+				padding: 0 0 20px
+				flex-wrap: wrap
+			&--item
+				&.active
+					.tabslider--caret
+						stroke: $blueLight
+						transform: translateY(-50%) rotate(-180deg)
+					// .tabslider--content
+					// 	display: block
+			&--information,
+			&--media
+				width: 100%
+			&--information
+				padding-right: 0
+				padding-bottom: 40px
+			&--image
+				margin: 0 auto
+				width: 100%
+			&--media_item
+				&-one
+					right: -15px
+					top: -30px
+				&-two
+					left: -15px
+					bottom: -30px
+				&-tree
+					right: -15px
+					bottom: -30px
+		@media ( max-width: 600px )
+			&--icon
+				&_1
+					width: 137px
+					height: 39px
+				&_2
+					width: 205px
+					height: 65px
+				&_3
+					width: 77px
+					height: 21px
+				&_4
+					width: 168px
+					height: 35px
+				&_5
+					width: 101px
+					height: 35px
+				&_6
+					width: 137px
+					height: 63px
+				&_7
+					width: 140px
+					height: 37px
+				&_8
+					width: 173px
+					height: 40px
+				&_9
+					width: 100px
+					height: 20px
+				&_10
+					width: 210px
+					height: 78px
+		@media ( max-width: 470px )
+			&--header
+				line-height: 1.2
+			&--media_item
+				padding: 10px
+			&--block_heading
+				padding-bottom: 5px
+				font-size: 1.2rem
+			&--icon
+				&_1
+					width: 102px
+					height: 29px
+				&_2
+					width: 152px
+					height: 48px
+				&_3
+					width: 57px
+					height: 15px
+				&_4
+					width: 124px
+					height: 26px
+				&_5
+					width: 75px
+					height: 26px
+				&_6
+					width: 102px
+					height: 48px
+				&_7
+					width: 104px
+					height: 27px
+				&_8
+					width: 128px
+					height: 29px
+				&_9
+					width: 74px
+					height: 15px
+				&_10
+					width: 155px
+					height: 57px
+.tabslider--buttons
+	@media ( max-width: 576px )
+		padding-top: 20px
+	a
+		@media ( max-width: 576px ) 
+			width: 100%
+			height: 56px

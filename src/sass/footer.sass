@@ -1,0 +1,200 @@
+.footer
+	background: #253053
+	padding: 53px 0 28px
+	display: flex
+	flex-direction: column
+	@media (max-width: 725px)
+		 padding: 28px 0 28px
+	a
+  		transition: all 0.5s ease;
+	a:hover
+		color: #1358DF
+.footer-box
+	justify-content: space-between
+	display: flex
+	padding-bottom: 27px;
+	@media (max-width: 1200px)
+		flex-direction: column
+	@media (max-width: 600px)
+		padding-bottom: 18px
+	&__line
+		display: flex
+		justify-content: space-between
+		@media (max-width: 725px)
+			align-items: center
+		@media (max-width: 400px)
+			flex-direction: column
+			align-items: flex-start
+	.main_logo
+		color: #fff
+		height: max-content
+		&:hover
+			color: #fff
+		@media (max-width: 700px)
+			position: relative
+			top: -28px
+		@media (max-width: 400px)
+			top: 0
+	&__info
+		margin-top: 18px
+		flex: 1 0 auto
+		max-width: 213px
+		@media (max-width: 1200px)
+			display: flex
+			margin-top: 48px
+			justify-content: flex-end
+			flex-wrap: wrap
+			max-width: 75%
+			margin-left: auto
+		@media (max-width: 725px)
+			max-width: 83%
+		@media (max-width: 600px)
+			max-width: 100%
+			margin-top: 20px
+		@media (max-width: 480px)
+			margin-top: 13px
+	ul
+		display: flex
+		justify-content: space-between
+		width: 687px
+		margin-top: 18px
+		margin-left: 32px
+		@media (max-width: 590px)
+			flex-wrap: wrap
+		@media (max-width: 480px)
+			justify-content: flex-start
+		li 
+			@media (max-width: 480px)
+				width: 26%
+				margin-bottom: 21px
+			@media (max-width: 480px)
+				width: 33%
+		a 
+			font-size: 16px;
+			color: #FFFFFF
+			@media (max-width: 590px)
+				font-size: 16px
+
+		@media (max-width: 1570px)
+			width: 721px
+			margin-left: 55px
+		@media (max-width: 1200px)
+			margin-top: 10px
+			width: auto
+			flex-wrap: wrap
+			justify-content: flex-end
+		@media (max-width: 725px)
+			margin-left: 34px
+			width: 100%
+			margin-top: 10px
+		@media (max-width: 600px)
+			justify-content: flex-end
+			margin-left: 0
+		@media (max-width: 400px)
+			justify-content: flex-start
+			margin-top: 25px
+	&__item
+		margin-bottom: 34px
+		display: flex
+		align-items: center
+		@media (max-width: 1200px)
+			width: 34%
+			text-align: right
+			justify-content: flex-end
+			margin-left: 25px
+		@media (max-width: 768px)
+			width: 43%
+		@media (max-width: 725px)
+			margin-right: 0px
+		@media (max-width: 590px)
+			margin-bottom: 22px
+		@media (max-width: 500px)
+			width: 44%
+			margin-left: 20px
+		@media (max-width: 450px)
+			width: 100%
+		@media (max-width: 400px)
+			justify-content: flex-start
+			text-align: left
+			margin-left: 0
+		br 
+			@media (max-width: 590px)
+				display: none
+		.icon-last 
+			height: 27px
+			@media (max-width: 768px)
+				width: 27px
+				text-align: center
+				flex: 1 0 auto
+				max-width: 27px
+		a, p 
+			font-size: 16px
+			line-height: 17px
+			color: #FFFFFF
+			margin-left: 17px
+			@media (max-width: 600px)
+				font-size: 15px
+				margin-left: 9px
+				line-height: 150%
+	svg
+		width: 22px
+		height: 20px
+		@media (max-width: 768px)
+			width: 27px
+			text-align: center
+.footer-bottom
+	padding-top: 28px
+	border-top: 1px solid rgba(255, 255, 255, 0.1)
+	&__link 
+		font-size: 15px
+		line-height: 14px
+		letter-spacing: 0.05em
+		color: rgba(255, 255, 255, 0.6)
+		text-decoration: underline
+		@media (max-width: 600px)
+			margin: 0 auto 
+	&__flex
+		justify-content: space-between
+		align-items: center
+		display: flex
+		@media (max-width: 600px)
+			flex-direction: column-reverse
+			align-items: flex-start
+	svg
+		width: 30px
+		height: 30px
+		transition: 0.5s ease
+	&__socials
+		display: flex
+		@media (max-width: 600px)
+			margin-bottom: 31px
+			justify-content: space-between
+			width: 100%
+		a 
+			margin-left: 30px
+			@media (max-width: 600px)
+				margin-left: 0
+			&:hover
+				svg
+					transform: rotate(20deg)
+.footer-box__item
+	.icon-last
+		@media (max-width: 600px)
+			position: relative
+			right: 0px
+			top: -6px
+		@media (max-width: 450px)
+			top: 0
+.footer-box ul li 
+	width: auto
+	margin-left: 72px
+	display: flex
+	justify-content: flex-end
+	margin-bottom: 24px
+	@media (max-width: 600px)
+		margin-left: 65px
+	@media (max-width: 550px)
+		margin-left: 30px
+	@media (max-width: 400px)
+		margin-left: 0
+		margin-right: 25px
